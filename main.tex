@@ -1,13 +1,20 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
 %Includes "References" in the table of contents
+%\usepackage[nottoc]{tocbibind}
+\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage[nottoc]{tocbibind}
 \bibliographystyle{elsarticle-num}
+%\bibliographystyle{apalike}
+%\bibliographystyle{elsarticle-harv}
+
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
 
 \usepackage[pdftex, backref, colorlinks]{hyperref}
 
 
-\title{Megagran8}
+\title{\Russian Научно-образовательный центр по проблемам астрофизики частиц и многоканальной астрономии}
 \author{imos }
 \date{June 2020}
 
@@ -26,7 +33,10 @@
 \newcommand{\prd}{Phys.\ Rev.\ D }
 \newcommand{\planss}{Planet.\ Spa.\ Sci.\ }
 \newcommand{\ssr}{Spa.\ Sci.\ Rev.\ }
+\newcommand{\aj}{Astron. J.}
+\newcommand{\nar}{New Astro. Rev.}
 
+\renewcommand{\cite}[1]{\citep{#1}}
 
 
 \begin{document}
@@ -490,7 +500,6 @@ Test
 \cite{Fukunaga1990a}
 
 End End
-
 \bibliography{references}
 
 
